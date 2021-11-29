@@ -6,10 +6,44 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Moel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+<nav>
+    <div class="container">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="../images/logo.png" alt="logo" class="logo">
+                <p class="name">Moel</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#"> <i class="bi bi-house-fill"></i> خانه</a></li>
+                <li><a href="#"> <i class="bi bi-list"></i> لیست اخبار</a></li>
+                <li>
+                    <label for="category-check">
+                        <i class="bi bi-caret-down-fill"></i> دسته بندی ها</a>
+                    </label>
+                    <input type="checkbox" id="category-check" hidden>
 
+                    <ul class="categories-container">
+                        <li><a href="#"> <i class="bi bi-diamond-fill"></i> دسته ۱</a></li>
+                        <li><a href="#"> <i class="bi bi-diamond-fill"></i> دسته ۲</a></li>
+                        <li><a href="#"> <i class="bi bi-diamond-fill"></i> دسته ۳</a></li>
+                        <li><a href="#"> <i class="bi bi-diamond-fill"></i> دسته ۴</a></li>
+                        <li><a href="#"> <i class="bi bi-diamond-fill"></i> دسته ۵</a></li>
+                        <li><a href="#"> <i class="bi bi-diamond-fill"></i> دسته ۶</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-left">
+                <input type="search" id="search" placeholder="جستجو">
+                <a href="#" class="login">ورود</a>
+                <a href="#" class="sign-in">ثبت نام</a>
+            </div>
+        </div>
+    </div>
+</nav>
 </body>
 </html>
