@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Sahel";
+    src: url("../fonts/Sahel.eot"),
+    url("../fonts/Sahel.woff") format("woff"),
+    url("../fonts/Sahel.ttf") format("truetype");
+}
+
+:root {
+    --font-sahel: "Sahel", sans-serif;
+    --color-primary: #D77A61;
+    --color-secondary: #D8B4A0;
+    --color-tertialy: #D8D3D8;
+    --color-dark: #223843;
+    --color-light: #EFF1F3;
+}
+
+body {
+    font-family: var(--font-sahel);
+    background-color: var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: auto;
+    padding: 0 30px;
+    overflow: hidden;
+}
