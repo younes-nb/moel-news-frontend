@@ -311,3 +311,75 @@ aside {
     height: 90px;
     margin-bottom: 30px;
 }
+
+footer {
+    position: relative;
+    background-color: var(--color-dark);
+    height: 65vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+
+footer .name {
+    font-size: 50px;
+}
+
+.brand-icons {
+    margin: 20px 35px 0 0;
+}
+
+.brand-icons i {
+    font-size: 30px;
+    color: var(--color-secondary);
+    margin-left: 10px;
+    transition: color 0.8s;
+    cursor: pointer;
+}
+
+.brand-icons i:hover {
+    color: var(--color-primary);
+}
+
+.footer-categories {
+    width: 15%;
+    margin-top: 30px;
+}
+
+.footer-categories-header, .about-us-header {
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+}
+
+.footer-categories li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #555;
+}
+
+.footer-categories a {
+    color: var(--color-secondary);
+    transition: color 0.8s;
+}
+
+.footer-categories a:hover {
+    color: var(--color-primary);
+}
+
+.about-us {
+    width: 30%;
+    margin-top: 30px;
+}
+
+.about-us-text {
+    color: var(--color-secondary);
+    line-height: 2;
+}
