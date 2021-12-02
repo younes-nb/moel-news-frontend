@@ -91,6 +91,7 @@ nav {
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 30px;
 }
 
 .nav-menu a {
@@ -329,13 +330,14 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-right {
     width: 25%;
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
+    z-index: 2;
 }
 
 footer .name {
@@ -361,6 +363,7 @@ footer .name {
 .footer-categories {
     width: 15%;
     margin-top: 30px;
+    z-index: 2;
 }
 
 .footer-categories-header, .about-us-header {
@@ -385,6 +388,7 @@ footer .name {
 .about-us {
     width: 30%;
     margin-top: 30px;
+    z-index: 2;
 }
 
 .about-us-text {
@@ -430,4 +434,106 @@ footer .name {
 .news-page-text {
     font-size: 18px;
     line-height: 2;
+}
+
+@media screen and (max-width: 1293px) {
+    .brand-icons {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .header-news {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 977px) {
+    .nav-left {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    #search {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-news {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    aside {
+        display: flex;
+        width: 100%;
+    }
+
+    .advertise {
+        margin-right: 20px;
+    }
+
+    .about-us {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-right {
+        width: 40%;
+    }
+
+    .footer-categories {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    aside {
+        flex-direction: column;
+    }
+
+    .advertise {
+        margin-right: 0;
+    }
+
+    footer {
+        height: max-content;
+    }
+
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-categories {
+        width: 100%;
+    }
+
+    .about-us {
+        margin-bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .news {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .news img {
+        border-radius: 8px 8px 0 0;
+    }
 }
